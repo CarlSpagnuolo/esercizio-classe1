@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head> 
+ <meta charset="UTF-8">
+ <title>Concentro Ronnie </title>
+ <style> 
+ .button-container { 
+  margin-top: 30px;
+ }
+ .subscription-form {
+  margin-left: 30px;
+  }
+ </style>
+
+</head>
+<body>
+ <h1> Iscriviti al concerto</h1>
+ <div> 
+  <form class="subscription-form">
+   <label for="nome-completo"> Nome completo </label><br>
+   <input type="text" id="nome-completo" name="nome-completo" required><br>
+   <label for="numero-telefonico"> Numero telefonico </label><br>
+   <input type="numeric" id="numero-telefonico" name="numero-telefonico" required><br>
+   <label for="email"> Email </label><br>
+   <input type="email" id="email" name="email" required><br>
+   <label> Genere</label><br>
+   <input type="radio" id="genere-m" name="genere" value="maschio">
+   <label for="genere-m"> Maschio </label>
+   <input type="radio" name="genere" id="genere-f" value="femmina">
+   <label for="genere-f"> Femmina </label><br>
+   <label>Seleziona servizi</label><br>
+   <input type="checkbox" name="service" value="navetta">
+   <label for= "service-n"> Navetta</label><br>
+   <input type="checkbox" name="service" value="bibite">
+   <label for="service-b"> Bibite </label><br>
+   
+   <div class="button-container" >
+    <button type="submit"> Iscriviti </button>
+   </div>
+  </form>
+ </div> 
+ </body>
+</html>
