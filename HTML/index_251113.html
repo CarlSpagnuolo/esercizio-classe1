@@ -7,8 +7,40 @@
     <meta name="description" content="sito del musicista" />
     <meta name="keywords" content="batteria,musica,arte" />
     <meta name="author" content="Carlo Spagnuolo" />
+    <style>
+      .listaContainer {
+        display: flex;
+        border: solid 1px black;
+      }
+
+      .lista1 {
+        border: solid 1px red;
+        margin: 10px;
+        padding: 5px;
+      }
+
+      .lista2 {
+        border: solid 1px blue;
+        margin: 10px;
+        padding: 5px;
+      }
+    </style>
   </head>
   <body>
+    <nav>
+      <img
+        a
+        src="https://i.etsystatic.com/37453345/r/il/7cf83e/7093998519/il_794xN.7093998519_e3ev.jpg"
+        alt=""
+        class="imgNav"
+      />
+      <div class="contenitoreLink">
+        <a href="form.html">Home</a>
+        <a href="navchisiamo.html">Chi siamo</a>
+        <a href="#">Galleria foto</a>
+        <a href="#formContatti">Contatti</a>
+      </div>
+    </nav>
     <section>
       <h1>Benvenuti nella mia pagina personale</h1>
       <h2>Vi spiego brevemente la mia storia</h2>
@@ -25,18 +57,24 @@
         Ipsum.
       </p>
       <hr />
-      <h3>Vi elenco gli strumenti che so suonare</h3>
-      <ul>
-        <li>Batteria</li>
-        <li>Pianoforte</li>
-        <li>Chitarra</li>
-      </ul>
-      <h3>I miei musicisti preferiti</h3>
-      <ol>
-        <li>Keith Jarrett</li>
-        <li>John Coltrane</li>
-        <li>Miles Davis</li>
-      </ol>
+      <div class="listaContainer">
+        <div class="lista1">
+          <h3>Vi elenco gli strumenti che so suonare</h3>
+          <ul>
+            <li>Batteria</li>
+            <li>Pianoforte</li>
+            <li>Chitarra</li>
+          </ul>
+        </div>
+        <div class="lista2">
+          <h3>I miei musicisti preferiti</h3>
+          <ol>
+            <li>Keith Jarrett</li>
+            <li>John Coltrane</li>
+            <li>Miles Davis</li>
+          </ol>
+        </div>
+      </div>
       <aside>
         <h4>Questo sono io!</h4>
         <img
@@ -65,7 +103,7 @@
           width="200"
           height="200"
         />
-        <p>
+        <p id="formContatti">
           Per informazioni <strong>contattami</strong>
           <br />
           Compila il form cliccando <a href="https://google.com">qui</a>
