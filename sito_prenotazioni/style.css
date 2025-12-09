@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://img.freepik.com/free-photo/excited-audience-watching-confetti-fireworks-having-fun-music-festival-night-copy-space_637285-559.jpg?semt=ais_hybrid&w=740&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iscrizioneContainer {
+  background: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contenitoreForm {
+  width: 400px;
+  height: auto;
+  text-align: center;
+}
