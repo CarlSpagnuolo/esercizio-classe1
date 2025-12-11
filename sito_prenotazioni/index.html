@@ -18,42 +18,47 @@
         <h3>Iscriviti al concerto</h3>
         <p>Compila il form sottostante per iscriverti al concerto di Carl</p>
         <form>
+        <div class= "inputContainer">
           <label for="nomeCognome">Nome completo</label>
-          <br />
           <input
             type="text"
             placeholder="Nome completo"
             name="nomeCognome"
             id="nomeCognome"
           />
-          <br />
-          <label for="email">Email</label> <br />
-
+        </div>
+        <div class="inputContainer">
+          <label for="email">Email</label> 
           <input type="email" placeholder="Email" name="email" id="email" />
-          <br />
-          <label for="data">Data</label> <br />
-          <input type="date" name="data" id="data" /> <br />
-          <label for="metodoDiPagamento">Metodo di pagamento</label> <br />
+        </div>
+        <div class="inputContainer">
+          <label for="data">Data</label> 
+          <input type="date" name="data" id="data" /> 
+        </div>
+        <div class="inputContainer">
+          <label for="metodoDiPagamento">Metodo di pagamento</label> 
           <select id="metodoDiPagamento" name="metodoDiPagamento">
             <option value="1">Bitcoin</option>
             <option value="2">Paypal</option>
           </select>
-          <br />
-          <label for="trasporto">Tipo di trasporto</label> <br />
+        </div>
+        <div class= "inputContainer">
+          <label for="trasporto">Tipo di trasporto</label> 
           <select id="trasporto" name="trasporto">
             <option value="1">Treno</option>
             <option value="2">Aereo</option>
           </select>
-          <br />
-          <label for="genere">Genere</label> <br />
-          <label for="maschio">Uomo</label>
+        </div>
+        <div class="inputContainer">
+          <label for="genere">Genere</label>
+          <label for="maschio" style="display:inline">Uomo</label>
           <input type="radio" name="genere" id="maschio" value="maschio" />
-          <br />
-          <label for="femmina">Donna</label>
+          <label for="femmina" style="display:inline"> Donna</label>
           <input type="radio" name="genere" id="femmina" value="femmina" />
-          <br />
-          <button>Prenotati</button>
-        </form>
+        </div>
+        <div class="inputButton">
+         <button style="background-color:red;padding:15px;color:white">Prenotati</button>
+        </div> 
       </div>
     </div>
   </body>

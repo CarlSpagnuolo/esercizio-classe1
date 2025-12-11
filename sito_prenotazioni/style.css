@@ -7,14 +7,29 @@ body {
 }
 
 .iscrizioneContainer {
-  background: whitesmoke;
   display: flex;
   flex-direction: row;
   justify-content: center;
+
 }
 
 .contenitoreForm {
   width: 400px;
   height: auto;
   text-align: center;
+  border: solid 1px black;
+ background: whitesmoke; 
+ padding: 15px;
+ border-radius: 10%;
 }
+.inputContainer {
+  margin-bottom: 10px;
+}
+.inputContainer > label {
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+ }
+.inputButton {
+  font-weight: bold;
+  }
