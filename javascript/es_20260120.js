@@ -48,10 +48,40 @@ function toAdd(toAddBook) {
 
   console.log("Inserimento libro avvenuto con successo!");
 }
+ // RECUPERARE IL LIBRO CHE HA ID PASSATO E CANCELLARLO DALL'ARRAY
 
 function toDelete(idDaEliminare) {
-  // RECUPERARE IL LIBRO CHE HA ID PASSATO E CANCELLARLO DALL'ARRAY
+  //verifico che il parametro sia valido
+  if (typeof idDaEliminare !== "number") {
+    console.log ("errore id passato non valido");
+    return;
+  }
+  console.log ( "cancellazione In corso per il libro con id " + idDaEliminare )
+
+//step 1 trovare index dell'libro che ha l'id uguale al parametro id da eliminare
+const index = books.findIndex (libro => libro.id == idDaEliminare)
+if (index == -1) {
+  console.log (" Errore id non trovato ")
+  return;
 }
+console.log (index)
+//step 2 usare l'index trovato per eliminare il libro dall'array
+books.splice (index, 1);
+console.log ("cancellazione avvenuta")
+
+}
+// FUNZIONE PER STAMPARE
+function toPrint () {
+  //stampare in console i dati di ogni libro
+  books.forEach (libro => {
+    const statoLettura = libro.isRead ? "si" : "no";
+    console.log (
+      "NOME LIBRO: " + libro.titolo + " nome categoria " + libro.categoria + " è stato letto? " + statoLettura + " voto " + libro.rating
+    )
+  }) 
+}
+
+
 
 //FUNZIONE PRINCIPALE DEL PROGRAMMA
 function main() {
@@ -82,6 +112,10 @@ function main() {
   });
 
   console.log(books);
+
+  toPrint();
+  toDelete (1);
+  toPrint ();
 
   console.log("---fine programma---");
 }
